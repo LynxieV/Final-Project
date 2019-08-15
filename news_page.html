@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> News </title>
+<link rel= "stylesheet" href= "news.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with 0 padding */
+body {
+  font-family: Arial;
+  padding: 0px;
+  margin: 0px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 0px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.summary {
+  background: white;
+  text-align: left;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 0px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide,
+make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+<div class="header">
+<h2>Latest News</h2>
+</div>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Alzheimer's Destroys The Brain Cells That Keep Us Awake</h2>
+      <h5>Summarized from <a href="https://www.sciencealert.com/alzheimer-s-disease-appears-to-attack-the-neurons-that-keep-us-awake-study-shows"> Science Alert </a>. Source date: 8/14/19.
+      <br>
+      <br> Date: August 14, 2019. <br>
+      <br> Written by Amani Nelson. </h5>
+      <img id="Altz" src="https://media.nature.com/w800/magazine-assets/d41586-018-07735-w/d41586-018-07735-w_16339496.jpg" alt="Altzheimer brain">
+      <div class="summary" style="height: 200px;">
+      <p id="study">This article goes into detail about a recent study from the University of California San Francisco (UCSF).
+      UCSF has found evidence to supportthat Altzheimer's is destroying the brain cells that keep us awake.
+      The evidence comes from an analysis of post-mortum brain cells of thirteen patients with Altzheimers
+      and 7 people who have healthy braincells. According to lead author Jun Oh, who researches memory and ageing at UCSF,
+      "[The degeneration is] remarkable because it's not just a single brain nucleus that's degenerating,
+      but the whole wakefulness-promoting network."
+      In other words, this study has revealed another way that Altzheimer's can be identified.
+      </p>
+      </div>
+      <p id="ff1"> <b> Fast Fact: </b> The name originates from a 1960's German physician, Dr. Alois Alzheimer,
+        who treated a woman who experienced the symptoms that today we call Altzheimer's disease.</p>
+    </div>
+    <div class="card">
+      <h2>Potential Dementia Repellant: Controlling Blood Pressure</h2>
+      <h5>Summarized from <a href="https://www.cbsnews.com/news/controlling-blood-pressure-may-help-prevent-dementia/"> CBS News </a> . Source date: 8/13/19. <br>
+      <br> Date: August 14, 2019. <br>
+      <br> Written by Amani Nelson. </h5>
+      <img id="Deme" src="https://www.brightfocus.org/sites/default/files/styles/full_width/public/what-causes-dementia-ver-2-800.jpg?itok=HfqK0WoD" alt="Dementia brain">
+      <div class="summary" style="height:200px;">
+        <p id="deme_study">
+          This article discusses how a study conducted by the U.S. National
+          Institute of Neurological Disorders and Stroke (NINDS)
+          has noticed that taking action to reduce high blood pressure with
+           prevention or intensive treatment for it, can reduce
+          the risk of potential neurological disfunction. In fact,
+          during the release of these findings Dr. Richard Hodes,
+          who is the director of the U.S. National Institute on Aging said,
+          "These findings [are] encouraging as we
+          continue to advance the science of understanding and addressing
+          the complexities of brain diseases such as Alzheimer's and
+          related dementias." Overall this article, is interesting
+          because it captures another milestone in the quest to understanding
+          dementia fully.
+        </p>
+      </div>
+      <br> <p id="ff2"> <b> Fast Fact: </b> Dementia is an umbrella term for Altzheimer's because the disease itself captures most of the symptoms of dementia.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2> Fast Fact Sources </h2>
+      <div class="summary" style="height:100px;">
+        <p>
+        Altzheimer's Fast Fact: <a href="https://www.sharecare.com/health/alzheimers-disease/how-alzheimers-disease-get-name"> Sharecare </a> <br>
+        <br>
+        Dementia Fast Fact: <a href="https://www.healthline.com/health/alzheimers-facts"> Healthline </a> <br>
+        </p>
+      </div>
+
+    </div>
+    <div class="card">
+      <h3> Add Logo </h3>
+
+    </div>
+    <div class="card">
+      <h3>Other articles to check out</h3>
+      <p> Altzheimer's Related: <br>
+        - <a href="https://www.alz.org/alzheimers-dementia/what-is-alzheimers"> Alzheimer's Association </a> <br>
+        - <a href="https://newatlas.com/alzheimers-alternative-hypothesis-lysosome/61025/"> New Atlas </a> <br>
+	      - <a href="https://www.webmd.com/alzheimers/guide/alzheimers-disease-stages#1"> Web MD </a> <br>
+	      - <a href="https://www.newsweek.com/alzheimers-disease-annihilates-braincells-keep-us-awake-scientists-1453243"> Newsweek </a> <br>
+	      - <a href="https://medlineplus.gov/alzheimersdisease.html"> MedlinePlus </a> <br>
+      </p>
+      <p> Dementia Related: <br>
+        - <a href="https://www.medscape.com/viewarticle/916707"> Medscape </a> <br>
+        - <a href="https://www.bbc.com/news/av/health-49184915/dementia-and-how-to-change-your-house-to-make-life-easier"> BBC News </a> <br>
+        - <a href="https://my.clevelandclinic.org/health/diseases/9170-dementia"> Cleveland Clinic </a> <br>
+        - <a href="https://www.medicalnewstoday.com/articles/142214.php"> Medical News Today </a> <br>
+        - <a href="https://www.express.co.uk/life-style/health/1165345/dementia-symptoms-signs-vascular-causes"> Express </a> <br>
+      </p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+<!-- Old News Page -->
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title> News Page </title>
+    <link rel= "stylesheet" href= "news.css">
+  </head>
+  <body>
+
+    <h1> Altzheimer's and Dementia </h1>
+    <h1> What is Alzheimer's?</h1>
+    <h2> Overview
+      <p>
+        Altzheimer's is a progressive disease that affects people's memory over time.
+        <br>
+        The name originates from a 1960's German physician, Dr. Alois Alzheimer,
+        who treated a woman who experienced the symptoms that today we call Altzheimer's disease.
+        <br>
+        It does this by killing a person's brain cells over time.
+        <br>
+        People with this disease are known to experience confusion and memory loss.
+        <br>
+        Unfortunately, there is no cure for Altzheimer's disease yet.
+      </p>
+      </h2>
+    <h3> For more information check out these sources: </h3>
+    <br>
+    <h3>
+    <a href="https://www.alz.org/alzheimers-dementia/what-is-alzheimers"> Alzheimer's Association </a>
+    <a href="https://newatlas.com/alzheimers-alternative-hypothesis-lysosome/61025/"> New Atlas </a>
+    <a href="https://www.webmd.com/alzheimers/guide/alzheimers-disease-stages#1"> Web MD </a>
+    <a href="https://www.newsweek.com/alzheimers-disease-annihilates-brain-cells-keep-us-awake-scientists-1453243"> Newsweek </a>
+    <a href="https://medlineplus.gov/alzheimersdisease.html"> MedlinePlus </a>
+      </h3>
+    <h1> What is Dementia? </h1>
+    <h2> Overview
+      <br>
+      <p>
+        Dementia is a progressive disease that affects how a person thinks, their behaviour and even their ability to perform everyday tasks.
+        <br>
+        Over a time period of months to even years, people with dementia lose their memory — at first for recent events,
+        <br>
+        and then eventually for events further back in their lives. There are some treatments that are available to treat this disease but,
+        <br>
+        there is no cure for progressive dementia.
+        </p>
+        </h2>
+        <br>
+    <h3> For more information check out these sources: </h3>
+        <br>
+        <h3>
+          <a href="https://www.medscape.com/viewarticle/916707"> Medscape </a>
+          <a href="https://www.mayoclinic.org/diseases-conditions/dementia/symptoms-causes/syc-20352013"> Mayo Clinic </a>
+          <a href="https://my.clevelandclinic.org/health/diseases/9170-dementia"> Cleveland Clinic </a>
+          <a href="https://www.medicalnewstoday.com/articles/142214.php"> Medical News Today </a>
+          <a href="https://www.cbsnews.com/news/nursing-home-staffers-lawsuit-nursing-home-workers-accused-of-taunting-91-year-old-woman-with-dementia-in-snapchat/"> CBS News </a>
+          </h3>
+  </body>
+
+</html> -->

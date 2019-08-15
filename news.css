@@ -1,0 +1,55 @@
+/* Summary Headings */
+h2{
+  text-align: center;
+}
+
+/* Altzheimer Summary */
+#study{
+  position: relative;
+  top: 10px;
+  text-align: justify;
+  max-height: 10px;
+  max-width: 500px;
+}
+
+/* Altzheimer Picture */
+#Altz{
+  position: relative;
+  float: right;
+  left: -90px;
+  padding-right: 3px;
+  max-height: 290px;
+  max-width: 290px;
+
+}
+
+/* Altzheimer Fact */
+#ff1{
+  position: relative;
+  top: 10px;
+}
+
+/* Dementia Summary */
+#deme_study {
+  position: relative;
+  text-align: justify;
+  max-height: 20px;
+  max-width: 450px;
+}
+
+/* Dementia Picture */
+#Deme{
+  position: relative;
+  float: right;
+  left: -90px;
+  padding-right: 3px;
+  max-height: 310px;
+  max-width: 310px;
+
+}
+
+/* Dementia Fact */
+#ff2{
+  position: relative;
+
+}

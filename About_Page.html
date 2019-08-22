@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel= "stylesheet" type= "text/css" href= "About_Page.css">
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Inconsolata|Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  </head>
+  <body>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li class= "active"><a href= "About_Page.html">About</a></li>
+      <li><a href= "News_Page.html">News</a></li>
+      <li><a href= "Contact_Page.html">Contact</a></li>
+      <li onclick="document.getElementById('id01').style.display='block'" style= "float: right;" ><a>Login/Sign-Up</a></li>
+    </ul>
+
+    <section class="hero">
+      <div class="hero-inner">
+          <h1>A B O U T</h1>
+      </div>
+    </section>
+
+    <br>
+
+    <div class="w3-row w3-padding-64" id="about">
+      <div class="w3-col m6 w3-padding-large w3-hide-small">
+       <img src="Community_1.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+      </div>
+
+      <div class="w3-col m6 w3-padding-large">
+        <h1 class="w3-center">About Safe and Sound</h1><br>
+        <h5 class="w3-center">Helping Keep Families Safe</h5>
+        <p class="w3-large">Our mission here at Safe and Sound is to help families keep their loved ones safe without having to constantly worry about where they are. The fight against Alzheimer's disease and dementia is not over until a cure is found, and one bracelet means another citizen kept safe. We are a group of four students involved in <a href = "girlswhocode.com/"> Girls Who Code</a> passionate about fighting against this deadly disease.
+        <p class="w3-large w3-text-grey w3-hide-medium">Safe and Sound is also expanding from Alzheimer's Disease and Dementia to other known/unknown illness. These ilnesses impair an individual's ability to thought process, it could make the individual know longer have the ability to know where they are and in need of a caretaker.</p>
+      </div>
+    </div>
+
+    <hr>
+
+
+        <div id="id01" class="modal">
+
+          <form class="modal-content animate" action="https://www.google.com/maps/@47.6020041,-122.3352948,13z">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <img src="blank_avatar.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container_2">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+
+            <div class="container_2" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <button type="button" class="signbtn"><a href= "Sign-Up.html" style= "color: white;"> Sign Up</a></button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+        </div>
+
+        <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+       </script>
+
+  </body>
+</html>

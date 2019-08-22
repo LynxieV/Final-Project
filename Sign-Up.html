@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel= "stylesheet" type= "text/css" href= "Sign-Up.css">
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Inconsolata|Quicksand&display=swap" rel="stylesheet">
+    <script src= "Sign-Up.js"></script>
+
+  </head>
+  <body>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href= "About_Page.html">About</a></li>
+      <li><a href= "News_Page.html">News</a></li>
+      <li><a href= "Contact_Page.html">Contact</a></li>
+      <li onclick="document.getElementById('id01').style.display='block'" style= "float: right;" ><a>Login/Sign-Up</a></li>
+    </ul>
+
+    <form action="https://www.google.com/maps/@47.6020041,-122.3352948,13z">
+      <div class="container">
+        <div class="header">
+          <h1>Registration</h1>
+        </div>
+          <p style= "font-size: 24px;">Please fill in this form to create an account.</p>
+        <hr>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+        <hr>
+        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+        <button type="submit" onclick="compare_password()" class="registerbtn">Register</button>
+      </div>
+
+      <div class="container signin">
+        <p>Already have an account? <a href="index.html">Sign in</a>.</p>
+      </div>
+    </form>
+
+
+
+  </body>
+</html>

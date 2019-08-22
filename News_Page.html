@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel= "stylesheet" href= "News_Page.css">
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Inconsolata|Quicksand&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href= "About_Page.html">About</a></li>
+      <li><a class= "active" href= "News_Page.html">News</a></li>
+      <li><a href= "Contact_Page.html">Contact</a></li>
+      <li onclick="document.getElementById('id01').style.display='block'" style= "float: right;" ><a>Login/Sign Up</a></li>
+    </ul>
+
+
+        <div id="id01" class="modal">
+
+          <form class="modal-content animate" action="https://www.google.com/maps/@47.6020041,-122.3352948,13z">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <img src="blank_avatar.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container_2">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+
+            <div class="container_2" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <button type="button" class="signbtn"><a href= "Sign-Up.html" style= "color: white;"> Sign Up</a></button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+        </div>
+
+        <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+
+    <div class="header">
+    <h2>Latest News</h2>
+    </div>
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>Alzheimer's Destroys The Brain Cells That Keep Us Awake</h2>
+          <h5>Summarized from <a href="https://www.sciencealert.com/alzheimer-s-disease-appears-to-attack-the-neurons-that-keep-us-awake-study-shows"> Science Alert </a>. Source date: 8/14/19.
+          <br>
+          <br> Date: August 14, 2019. <br>
+          <br> Written by Amani Nelson. </h5>
+          <img id="Altz" src="https://media.nature.com/w800/magazine-assets/d41586-018-07735-w/d41586-018-07735-w_16339496.jpg" alt="Altzheimer brain">
+          <div class="summary" style="height: 200px;">
+          <p id="study">This article goes into detail about a recent study from the University of California San Francisco (UCSF).
+          UCSF has found evidence to supportthat Altzheimer's is destroying the brain cells that keep us awake.
+          The evidence comes from an analysis of post-mortum brain cells of thirteen patients with Altzheimers
+          and 7 people who have healthy braincells. According to lead author Jun Oh, who researches memory and ageing at UCSF,
+          "[The degeneration is] remarkable because it's not just a single brain nucleus that's degenerating,
+          but the whole wakefulness-promoting network."
+          In other words, this study has revealed another way that Altzheimer's can be identified.
+          </p>
+          </div>
+          <p id="ff1"> <b> Fast Fact: </b> The name originates from a 1960's German physician, Dr. Alois Alzheimer,
+            who treated a woman who experienced the symptoms that today we call Altzheimer's disease.</p>
+        </div>
+        <div class="card">
+          <h2>Potential Dementia Repellant: Controlling Blood Pressure</h2>
+          <h5>Summarized from <a href="https://www.cbsnews.com/news/controlling-blood-pressure-may-help-prevent-dementia/"> CBS News </a> . Source date: 8/13/19. <br>
+          <br> Date: August 14, 2019. <br>
+          <br> Written by Amani Nelson. </h5>
+          <img id="Deme" src="https://www.brightfocus.org/sites/default/files/styles/full_width/public/what-causes-dementia-ver-2-800.jpg?itok=HfqK0WoD" alt="Dementia brain">
+          <div class="summary" style="height:200px;">
+            <p id="deme_study">
+              This article discusses how a study conducted by the U.S. National
+              Institute of Neurological Disorders and Stroke (NINDS)
+              has noticed that taking action to reduce high blood pressure with
+               prevention or intensive treatment for it, can reduce
+              the risk of potential neurological disfunction. In fact,
+              during the release of these findings Dr. Richard Hodes,
+              who is the director of the U.S. National Institute on Aging said,
+              "These findings [are] encouraging as we
+              continue to advance the science of understanding and addressing
+              the complexities of brain diseases such as Alzheimer's and
+              related dementias." Overall this article, is interesting
+              because it captures another milestone in the quest to understanding
+              dementia fully.
+            </p>
+          </div>
+          <br> <p id="ff2"> <b> Fast Fact: </b> Dementia is an umbrella term for Altzheimer's because the disease itself captures most of the symptoms of dementia.</p>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <h2> Fast Fact Sources </h2>
+          <div class="summary" style="height:100px;">
+            <p>
+            Altzheimer's Fast Fact: <a href="https://www.sharecare.com/health/alzheimers-disease/how-alzheimers-disease-get-name"> Sharecare </a> <br>
+            <br>
+            Dementia Fast Fact: <a href="https://www.healthline.com/health/alzheimers-facts"> Healthline </a> <br>
+            </p>
+          </div>
+
+        </div>
+        <div class="card">
+          <img style= "width: 100%" src="logo.png" alt="Our Logo">
+        </div>
+        <div class="card">
+          <h3>Other articles to check out</h3>
+          <p> Altzheimer's Related: <br>
+            - <a href="https://www.alz.org/alzheimers-dementia/what-is-alzheimers"> Alzheimer's Association </a> <br>
+            - <a href="https://newatlas.com/alzheimers-alternative-hypothesis-lysosome/61025/"> New Atlas </a> <br>
+    	      - <a href="https://www.webmd.com/alzheimers/guide/alzheimers-disease-stages#1"> Web MD </a> <br>
+    	      - <a href="https://www.newsweek.com/alzheimers-disease-annihilates-braincells-keep-us-awake-scientists-1453243"> Newsweek </a> <br>
+    	      - <a href="https://medlineplus.gov/alzheimersdisease.html"> MedlinePlus </a> <br>
+          </p>
+          <p> Dementia Related: <br>
+            - <a href="https://www.medscape.com/viewarticle/916707"> Medscape </a> <br>
+            - <a href="https://www.bbc.com/news/av/health-49184915/dementia-and-how-to-change-your-house-to-make-life-easier"> BBC News </a> <br>
+            - <a href="https://my.clevelandclinic.org/health/diseases/9170-dementia"> Cleveland Clinic </a> <br>
+            - <a href="https://www.medicalnewstoday.com/articles/142214.php"> Medical News Today </a> <br>
+            - <a href="https://www.express.co.uk/life-style/health/1165345/dementia-symptoms-signs-vascular-causes"> Express </a> <br>
+          </p>
+        </div>
+      </div>
+    </div>
+</html>

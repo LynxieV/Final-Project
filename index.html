@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel= "stylesheet" type= "text/css" href= "Home_Page.css">
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Inconsolata|Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  </head>
+  <body>
+    <ul>
+      <li><a class= "active" href="index.html">Home</a></li>
+      <li><a href= "About_Page.html">About</a></li>
+      <li><a href= "News_Page.html">News</a></li>
+      <li><a href= "Contact_Page.html">Contact</a></li>
+      <li onclick="document.getElementById('id01').style.display='block'" style= "float: right;" ><a>Login/Sign-Up</a></li>
+    </ul>
+
+    <section class="hero">
+      <div class="hero-inner">
+          <h1>Safe and Sound</h1>
+          <h2 style= "font-size: 50px;color:#111;">Helping Keep Familes Safe</h2>
+      </div>
+    </section>
+
+    <h2 style= "text-align: center; font-size: 60px; font-family: 'Rubik', sans-serif;">Why Safe and Sound</h2>
+    <div class="summary">
+    <p>
+      This website was created to allow families to feel safe and secure about the whereabout of their love ones
+      who have Dementia, Altzheimer's Disease, or other diseases, disabilities that leave that family/individual vulnerable.
+      The founders of Safe and Sound wanted to create something that would help ease the stress and worry families may have.
+    </p>
+    <p>
+      On this website, there is information in the About page that goes further into detail about Safe and Sound and our
+      cause. For further access into our website, create an account of if you already have, log in!
+    </div>
+
+
+
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>Women In Tech</h1>
+        <h2 style= "font-size: 50px;color:#111;">Community Helper</h2>
+      </div>
+    </section>
+
+    <div class="w3-row w3-padding-64" id="menu">
+        <div class="w3-col l6 w3-padding-large">
+          <h1 class="w3-center">Vanessa Tostado</h1><br>
+          <h4>Civic Digital Fellow</h4>
+          <p class="w3-text-grey">Worked as a Software Engineering Fellow at the General Services Administration where she developed features for Vote.gov to display upcoming federal election deadlines</p><br>
+
+          <h4>Software Engineer Intern</h4>
+          <p class="w3-text-grey">Migrated an Angular website into a Progressive Web Application for Visa business clients which increased accessibility of product from only web to mobile and tablets.
+            Implemented an application using Ethereum Blockchain and internal Visa API’s to provide a fast, secure and reliable solution to cross border money transaction</p><br>
+
+          <h4>Web Development Intern</h4>
+          <p class="w3-text-grey">Analyzed HTML and CSS code to find bugs, brainstormed and tested multiple solutions until fixing problem for 12 tickets related to the LinkedIn for Business website
+            Updated team in daily meetings on status and priorities of current projects</p><br>
+
+          <p class="w3-text-grey">This was all sourced from <a href = "https://www.linkedin.com/in/vanessa-t-b79880b1/">Vanessa Tostado's LinkedIn.</a></p>
+        </div>
+
+        <div class="w3-col l6 w3-padding-large">
+          <img src="Women_Tech.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+        </div>
+      </div>
+
+      <hr>
+
+
+    <div id="id01" class="modal">
+
+      <form class="modal-content animate" action="https://www.google.com/maps/@47.6020041,-122.3352948,13z">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="blank_avatar.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container_2">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+
+        <div class="container_2" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="button" class="signbtn"><a href= "Sign-Up.html" style= "color: white;"> Sign Up</a></button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+
+    <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
